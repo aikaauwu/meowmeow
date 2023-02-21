@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   client.query('SELECT * FROM resident', (err, result) => {
     if (err) throw err;
     res.send(result.rows);
-    client.end();
+    
   });
 });
 
